@@ -33,7 +33,7 @@ $btnTextColor:#d90308; // .header__btn__order
 }
 .header__btn__order {
   position: relative;
-  z-index: 2;
+  z-index: 999;
   width: 247px;
   height: 63px;
   cursor: pointer;
@@ -71,6 +71,8 @@ $btnTextColor:#d90308; // .header__btn__order
   background-size: cover;
   height: 1374px;
   margin-top: -72px;
+  position: relative;
+  z-index: 4;
 }
 .title-slogan {
   position: relative;
@@ -101,4 +103,49 @@ $btnTextColor:#d90308; // .header__btn__order
   letter-spacing: 2.4px;
   text-align: center;
   padding-top: 100px;
+}
+.btn__group {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  button {
+    margin-left: 52px;
+  }
+}
+// scrin2__section
+
+.scrin2__section {
+  background: url(../img/scrin2.png) no-repeat center center;
+  background-size: cover;
+  height: 818px;
+  position: relative;
+  z-index: 3;
+  margin-top: -200px;
+}
+.text__box {
+  margin-top: 158px;
+  text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75), 0 0 13px rgba(99, 61, 23, 0.75);
+  color: #fcf8f8;
+  font-family: "CyrillicOldBold";
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 18.96px;
+  /* Text style for "О #Царском" */
+  letter-spacing: 2.43px;
+  img {
+    width: 92px;
+    height: 101px;
+  }
+}
+.description__box {
+   
+  p {
+    color: #fffefc;
+    font-family: "Cambria Math";
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    /* Text style for "Contrary t" */
+    letter-spacing: 0.66px;
+  }
 }
