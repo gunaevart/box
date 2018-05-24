@@ -1,0 +1,59 @@
+body {
+	background:#fff;
+}
+$fcol: red;
+
+@mixin large-text {
+  font: {
+    family: Arial;
+    weight: bold;
+  }
+  color: #ff0000;
+}
+
+.card-body {
+
+	.card-title {
+
+		font-size: 3em;
+		color: $fcol;
+		&:hover {
+
+			color:black;
+			@include large-text;
+		}
+	}
+}
+#logo {
+	background: url('../img/logo.png') no-repeat center;
+	height: 100px;
+	background-size:contain;
+}
+.col__form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__form {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	lable, a {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+.col__nav {
+	display: flex;
+	align-items: center;
+	ul{
+		display: flex;
+		
+	}
+	li {
+		list-style: none;
+		margin-left: 10px;
+		
+	}
+}
