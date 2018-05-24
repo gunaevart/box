@@ -1,0 +1,104 @@
+// Переменные
+$btnTextColor:#d90308; // .header__btn__order
+
+// Шрифты
+@font-face {
+  font-family: "CyrillicOldBold";
+  src: url("../fonts//CyrillicOldBold.eot");
+  src: url("../fonts//CyrillicOldBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts//CyrillicOldBold.woff") format("woff"),
+  url("../fonts//CyrillicOldBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.row__bg {
+  background: url(../img/header-bg.png) no-repeat center;
+  margin-top: -7px
+}
+.header__fone {
+  color: #020202;
+  font-family: "Cambria Math";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 20.62px;
+  text-transform: uppercase;
+  /* Text style for "+7 906 758" */
+  letter-spacing: 1.05px;
+  &:hover {
+    text-decoration: none;
+    color: #fcf401;
+  }
+}
+.header__btn__order {
+  position: relative;
+  z-index: 2;
+  width: 247px;
+  height: 63px;
+  cursor: pointer;
+  background-color: $btnTextColor;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 12px;
+  color: #fcf8f8;
+  font-family: "Cambria Math";
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 23.62px;
+  /* Text style for "Перезвонит" */
+  letter-spacing: 2.1px;
+}
+.logo-header {
+  width: 136px;
+  height: 132px;
+}
+
+.cart {
+  color: #040404;
+  font-family: "Cambria Math";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 26.05px;
+  text-transform: uppercase;
+  /* Text style for "Итого" */
+  letter-spacing: 4.15px;
+}
+// Main section
+
+.main__section {
+  background: url(../img/main-section.png) no-repeat center center;
+  background-size: cover;
+  height: 1374px;
+  margin-top: -72px;
+}
+.title-slogan {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(172, 130, 62, 0.75);
+  color: #000000;
+  font-family: "CyrillicOldBold";
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 5.76px;
+  /* Text style for "П, усть  В" */
+  letter-spacing: 2.4px;
+  text-align: center;
+  padding-top: 200px;
+}
+.main__logo {
+  text-align: center;
+  margin-top: 80px;
+}
+.description__slogan {
+  text-shadow: 0 0 8px rgba(172, 130, 62, 0.75);
+  color: #000000;
+  font-family: "CyrillicOldBold";
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 5.76px;
+  /* Text style for "П, усть  В" */
+  letter-spacing: 2.4px;
+  text-align: center;
+  padding-top: 100px;
+}
