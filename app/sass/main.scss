@@ -11,10 +11,14 @@ $btnTextColor:#d90308; // .header__btn__order
   font-style: normal;
   font-weight: normal;
 }
-
+@font-face { 
+	font-family: "a_OldTyper";
+	src: url('../a_old_typer.ttf');
+}
 
 .row__bg {
-  background: url(../img/header-bg.png) no-repeat center;
+  background: url(../img/header-bg.jpg) no-repeat center center;
+  background-size: cover;
   margin-top: -7px
 }
 .header__fone {
@@ -67,10 +71,10 @@ $btnTextColor:#d90308; // .header__btn__order
 // Main section
 
 .main__section {
-  background: url(../img/main-section.png) no-repeat center center;
+  background: url(../img/main-section.jpg) no-repeat center center;
   background-size: cover;
   height: 1374px;
-  margin-top: -72px;
+  // margin-top: -72px;
   position: relative;
   z-index: 4;
 }
@@ -115,12 +119,12 @@ $btnTextColor:#d90308; // .header__btn__order
 // scrin2__section
 
 .scrin2__section {
-  background: url(../img/scrin2.png) no-repeat center center;
+  background: url(../img/scrin2.jpg) no-repeat center center;
   background-size: cover;
-  height: 818px;
+  height: 802px;
   position: relative;
   z-index: 3;
-  margin-top: -200px;
+  // margin-top: -200px;
 }
 .text__box {
   margin-top: 158px;
@@ -147,5 +151,289 @@ $btnTextColor:#d90308; // .header__btn__order
     line-height: 24px;
     /* Text style for "Contrary t" */
     letter-spacing: 0.66px;
+  }
+}
+// scrin3__section
+.scrin3__section {
+  background: url(../img/screen-3.jpg) no-repeat center center;
+  background-size: cover;
+  height: 818px;
+  position: relative;
+  z-index: 3;
+  margin-top: -2px;
+  .text__box {
+    line-height: 62.96px;
+    letter-spacing: 2.32px;
+    font-size: 61px;
+  }
+}
+.description__box {
+  ol li {
+    text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75), 0 0 13px rgba(99, 61, 23, 0.75);
+    color: #fcf8f8;
+    font-family: "Cambria Math";
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 62.96px;
+    /* Text style for "Неожиданны" */
+    letter-spacing: 0.53px;
+    
+  }
+}
+  ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+   }
+   li::before {
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    
+    text-shadow: -4px -3px 5px rgba(255, 255, 255, 0.52);
+    color: #3F2A15;
+    text-shadow: 
+      -0   -1px 0   #FCFCFC,
+      0   -1px 0   #FCFCFC,
+      -0    1px 0   #FCFCFC,
+      0    1px 0   #FCFCFC,
+      -1px -0   0   #FCFCFC,
+      1px -0   0   #FCFCFC,
+      -1px  0   0   #FCFCFC,
+      1px  0   0   #FCFCFC,
+      -1px -1px 0   #FCFCFC,
+      1px -1px 0   #FCFCFC,
+      -1px  1px 0   #FCFCFC,
+      1px  1px 0   #FCFCFC,
+      -1px -1px 0   #FCFCFC,
+      1px -1px 0   #FCFCFC,
+      -1px  1px 0   #FCFCFC,
+      1px  1px 0   #FCFCFC;
+    font-family: "a_OldTyper";
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 79.68px;
+    letter-spacing: -2.1px;
+   }
+
+
+//section__title
+
+.section__title {
+  background: url(../img/section-title.jpg) no-repeat center center;
+  background-size: cover;
+  height: 260px;
+  .description__slogan {
+    color: #060606;
+    font-family: "CyrillicOldBold";
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 85.76px;
+    padding-top: 45px;
+    letter-spacing: -0.86px;
+  }
+}
+
+
+//section__product
+
+.section__product {
+  background: url(../img/section__product.jpg) no-repeat center center;
+  background-size: cover;
+  height: 1800px;
+}
+
+
+//product img
+
+.product {
+  box-shadow: -6px -5px 5px rgba(0, 0, 0, 0.36);
+  background-color: rgba(63, 42, 21, 0.29);
+  background-color: #020202;
+  opacity: 0.74;
+  padding: 20px;
+
+  &__img {
+    width: 309px;
+  }
+  &__text {
+    color: #fffefc;
+    font-family: "Cambria Math";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    padding-top: 5px;
+    letter-spacing: 0.6px;
+  }
+  &__prise {
+    background-color: #3f2a15;
+    opacity: 0.89;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fefcfc;
+    font-family: "Cambria Math";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 26.3px;
+    text-transform: uppercase;
+    color: #fefcfc;
+    letter-spacing: 3.96px;
+    float: right;
+  }
+  &__btn {
+    background-color: $btnTextColor;
+    border: 0px;
+    color: #fcf8f8;
+    font-family: "Cambria Math";
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+//guarantee
+
+.guarantee {
+  margin-top: 180px;
+  padding: 40px;
+  box-shadow: -6px -5px 5px rgba(0, 0, 0, 0.36);
+  background-color: rgba(63, 42, 21, 0.29);
+  background-color: #030303;
+  opacity: 0.74;
+
+  &__img {
+    float: left;
+  }
+  &__title {
+    text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75), 0 0 6px rgba(99, 61, 23, 0.75);
+    color: #fcf8f8;
+    font-family: "CyrillicOldBold";
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 62.96px;
+    letter-spacing: 2.85px;
+    margin-top: 46px;
+    margin-bottom: 70px;
+    
+  }
+
+  &__text {
+    color: #fffefc;
+    font-family: "Cambria Math";
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+}
+
+
+//section__footer
+
+.help__bg {
+  background: url(../img/section__product.jpg) no-repeat center center;
+  background-size: cover;
+  height: 200px;
+}
+
+.section__footer {
+  background: url(../img/footer.jpg) no-repeat center center;
+  background-size: cover;;
+}
+.footer {
+  padding-top: 100px;
+
+  &__title {
+    text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75);
+    color: #fcf8f8;
+    font-family: "CyrillicOldBold";
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 62.96px;
+    /* Text style for "Доставка" */
+    letter-spacing: 2.85px;
+  }
+
+  &__img {
+    padding-top: 45px;
+    float: left;
+    margin-right: 30px;
+  }
+  &__working {
+    text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75);
+    color: #fcf8f8;
+    font-family: "CyrillicOldBold";
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 62.96px;
+    letter-spacing: -5.76px;
+    margin-top: 118px;
+  }
+  &__text  {
+    width: 620px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    color: #fffefc;
+    font-family: "Cambria Math";
+    font-size: 43px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    clear: both;
+  }
+  &__text p span {
+    font-family: "CyrillicOldBold";
+    font-weight: bold;
+    letter-spacing: 1.29px;
+  }
+  &__phone {
+    text-shadow: -6px -5px 11px rgba(0, 0, 0, 0.75);
+    color: #fcf8f8;
+    font-family: "CyrillicOldBold";
+    font-size: 59px;
+    font-weight: bold;
+    letter-spacing: -5.23px;
+    position: relative;
+    left: 22%;
+  }
+  &__phone span {
+    color: #fffefc;
+    font-family: "Cambria Math";
+    font-size: 43px;
+    font-weight: 400;
+    letter-spacing: 1.29px;
+    padding-left: 30px;
+    
+  }
+}
+//contacts
+
+.contacts {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__btn {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background:transparent;
+    padding: 20px 100px;
+    color: #fcfeff;
+    font-family: Tahoma;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 5.53px;
+    letter-spacing: 4.93px;
+    cursor: pointer;
+  }
+  &__copy {
+    color: #fdfdfd;
+    font-family: "Cambria Math";
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 79px;
+    /* Text style for "2, 018/#Ца" */
+    letter-spacing: 0.78px;
   }
 }
