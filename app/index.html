@@ -8,14 +8,16 @@
 	<!-- Используеи bootstrup 4.0xx -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
 	 crossorigin="anonymous">
+	 <!-- normalize.css -->
+	 <link rel="stylesheet" href="normalize.css">
 	<!-- Наши стили -->
 	<link rel="stylesheet" href="css/main.css">
-	<title>Document</title>
+	<title>Царский Ящик, Пусть Ваш Мужчина Почувствует себя Царём, подпрки</title>
 </head>
 
 <body>
 	<!-- Header section -->
-	<header class="container-fluid">
+	<header class="container-fluid" >
 		<div class="row row__bg pt-3 pb-3 d-flex align-items-center">
 			<div class="col-md-1 offset-md-1">
 				<a href="#!">
@@ -25,18 +27,18 @@
 			<div class="col-md-2">
 				<a href="tel:+7 906 758-93-00" class="header__fone">+7 906 758-93-00</a>
 				<br>
-				<button class="btn header__btn__order">Перезвоните мне</button>
+				<button class="btn header__btn__order" data-toggle="modal" data-target="#exampleModal">Перезвоните мне</button>
 			</div>
-			<div class="col-md-3 offset-md-5 d-flex align-items-center">
+			<div class="col-md-3 offset-md-5 d-flex align-items-center" id="cart">
 				<a href="#!">
-					<img src="img/car-header.png" alt="Корзина товаров Царский ящик">
+					<img class="cart" src="img/car-header.png" alt="Корзина товаров Царский ящик">
 				</a>
-				<dir class="cart" id="cart">
+				<div class="cart" >
 					<div>В корзине</div>
 					<div>0
 						<span>товаров</span>
 					</div>
-				</dir>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -56,7 +58,7 @@
 		<div class="col-md-12">
 			<div class="btn__group">
 				<button class="btn header__btn__order">Оформирь заказ</button>
-				<button class="btn header__btn__order">Каталог</button>
+				<button class="btn header__btn__order catalog">Каталог</button>
 			</div>
 		</div>
 	</section>
@@ -192,14 +194,16 @@
 				<img class="guarantee__img" src="img/guarantee.png" alt="">
 				<h3 class="guarantee__title">Гарантия </h3>
 				<div class="guarantee__text">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+						from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+						looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites
+						of the word in classical literature, discovered the undoubtable source.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- // footer section -->
-	<div class="help__bg">
-	</div>
+	<div class="help__bg"></div>
 	<section class="section__footer">
 		<footer class="container">
 			<div class="footer">
@@ -207,25 +211,50 @@
 				<img class="footer__img" src="img/2-layers.png" alt="Доставка">
 				<div class="footer__working">С 10:00 до 23:00</div>
 				<div class="footer__text">
-					<p>Доставляем <span>#Царский ЯщикЪ,</span>
-							лучший подарок для вашего 
-							мужчины.</p>
+					<p>Доставляем
+						<span>#Царский ЯщикЪ,</span>
+						лучший подарок для вашего мужчины.
+					</p>
 				</div>
 				<div class="footer__phone">
-						Телефон:<span>+7 906-758-930</span>
+					Телефон:
+					<span>+7 906-758-930</span>
 				</div>
 			</div>
-			
+
 		</footer>
 		<div class="contacts">
-				<img class="contacts__logo" src="img/logo-footer.png" alt="лого">
-				<button class="contacts__btn">Наверх</button>
-				<div class="contacts__copy">2018/#Царский ЯщикЪ</div>
-				<img class="contacts__cart1" src="img/mastercard.png" alt="cart">
-				<img class="contacts__cart2" src="img/visa.png" alt="cart">
-			</div>
+			<img class="contacts__logo" src="img/logo-footer.png" alt="лого">
+			<button class="contacts__btn">Наверх</button>
+			<div class="contacts__copy">2018/#Царский ЯщикЪ</div>
+			<img class="contacts__cart1" src="img/mastercard.png" alt="cart">
+			<img class="contacts__cart2" src="img/visa.png" alt="cart">
+		</div>
 	</section>
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title align-center" id="exampleModalLabel">Заказать звонок</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h6>
+							Оставьте ваш номер телефона мы вам перезвоним
+					</h6>
+						<label for="icon_telephone">Введите Ваш номер телефона </label>
+						<input id="icon_telephone" type="tel" placeholder="999 999-9999">
+						
+				</div>
+				<div class="modal-footer">
+						<button type="button" id="callback" class="btn btn-outline-danger">Перезвоните мне!</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -238,7 +267,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
 	 crossorigin="anonymous"></script>
 	<script src="js/libs.min.js"></script>
-	<script src="js/common.js.js"></script>
+	<script src="js/Masked.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
