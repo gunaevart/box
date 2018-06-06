@@ -37,7 +37,7 @@ $btnTextColor:#d90308; // .header__btn__order
 }
 .header__btn__order {
   position: relative;
-  z-index: 999;
+  z-index: 998;
   width: 247px;
   height: 63px;
   cursor: pointer;
@@ -59,6 +59,7 @@ $btnTextColor:#d90308; // .header__btn__order
 }
 
 .cart {
+  
   color: #040404;
   font-family: "Cambria Math";
   font-size: 30px;

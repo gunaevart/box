@@ -8,6 +8,12 @@
 	<!-- Используеи bootstrup 4.0xx -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
 	 crossorigin="anonymous">
+
+	
+<script>
+
+</script>
+
 	 <!-- normalize.css -->
 	 <link rel="stylesheet" href="normalize.css">
 	<!-- Наши стили -->
@@ -30,14 +36,9 @@
 				<button class="btn header__btn__order" data-toggle="modal" data-target="#exampleModal">Перезвоните мне</button>
 			</div>
 			<div class="col-md-3 offset-md-5 d-flex align-items-center" id="cart">
-				<a href="#!">
-					<img class="cart" src="img/car-header.png" alt="Корзина товаров Царский ящик">
-				</a>
-				<div class="cart" >
-					<div>В корзине</div>
-					<div>0
-						<span>товаров</span>
-					</div>
+				
+				<div class="cart label-place" >
+					
 				</div>
 			</div>
 		</div>
@@ -127,7 +128,7 @@
 								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
 						</div>
 						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
+						<button class="add_item product__btn" data-id="1" data-title="Хуйли ящик" data-price="20000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -138,7 +139,7 @@
 								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
 						</div>
 						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
+						<button class="add_item product__btn" data-id="2" data-title="Хуйли ящик" data-price="10000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -149,7 +150,7 @@
 								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
 						</div>
 						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
+						<button class="add_item product__btn" data-id="3" data-title="Хуйли ящик" data-price="30000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
 					</div>
 				</div>
 			</div>
@@ -162,7 +163,20 @@
 								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
 						</div>
 						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
+						<button class="add_item product__btn" data-id="1" data-title="Хуйли ящик" data-price="20000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
+						
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="product">
+						<img class="product__img" src="img/product/pdoduct__img.jpg" alt="">
+						<div class="product__text">
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
+						</div>
+						<span class="product__prise">10.000 &#8381;</span>
+						<button class="add_item product__btn" data-id="1" data-title="Хуйли ящик" data-price="20000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -173,18 +187,11 @@
 								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
 						</div>
 						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="product">
-						<img class="product__img" src="img/product/pdoduct__img.jpg" alt="">
-						<div class="product__text">
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-								from 45 BC, making it over 2000 years old. f the word in classical literature, discovered the undoubtable source.</p>
-						</div>
-						<span class="product__prise">10.000 &#8381;</span>
-						<button class="product__btn">Добавить в корзину</button>
+						
+						<a class="easynetshop-buy" rel="4a9f99dc105">
+
+							<button class="add_item product__btn" data-id="1" data-title="Хуйли ящик" data-price="20000" data-img="img/product/pdoduct__img.jpg" data-count="100500">Добавить в корзину</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -255,20 +262,21 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
 	<!-- Подключаем скрипты -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+
+				<!-- Подключаем корзину -->	
+	<link href="css/jqcart.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jqcart.min.js"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
+	 <!-- crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
 	 crossorigin="anonymous"></script>
-	<script src="js/libs.min.js"></script>
+	<!-- <script src="js/libs.min.js"></script> -->
 	<script src="js/Masked.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
-
 </html>
