@@ -97,6 +97,10 @@ $btnTextColor:#d90308; // .header__btn__order
   text-align: center;
   margin-top: 80px;
 }
+.main__logo img {
+  width: 100%;
+  height: auto;
+}
 .description__slogan {
   text-shadow: 0 0 8px rgba(172, 130, 62, 0.75);
   color: #000000;
@@ -253,7 +257,9 @@ $btnTextColor:#d90308; // .header__btn__order
   padding: 20px;
 
   &__img {
-    width: 309px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
   }
   &__text {
     color: #fffefc;
@@ -436,5 +442,49 @@ $btnTextColor:#d90308; // .header__btn__order
     line-height: 79px;
     /* Text style for "2, 018/#Ца" */
     letter-spacing: 0.78px;
+  }
+}
+@media screen and (max-width: 768px){
+  .title-slogan {
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 0px;
+  }
+  .section__title .description__slogan {
+    font-size: 3em;
+    padding-top: 0px;
+  }
+  .description__slogan {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .btn__group {
+    flex-wrap: wrap;
+  }
+  .btn__group button {
+    margin-left: 0px;
+  }
+  .guarantee {
+    opacity: 1;
+  }
+  .guarantee__title {
+    font-size: 3em;
+    line-height: 0;
+    padding-top: 150px;
+  }
+  .scrin3__section .text__box {
+    line-height: 33.96px;
+    letter-spacing: 1.32px;
+    font-size: 2em;
+  }
+  .description__box ol li {
+    font-size: 1.2em;
+  }
+  .section__footer {
+    display: none;
+  }
+  .product {
+    margin-bottom: 20px;
+    opacity: 1;
   }
 }
