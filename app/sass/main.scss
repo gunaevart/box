@@ -91,15 +91,18 @@ $btnTextColor:#d90308; // .header__btn__order
   /* Text style for "П, усть  В" */
   letter-spacing: 2.4px;
   text-align: center;
-  padding-top: 200px;
+  position: relative;
+  top: -50px;
+  left: 60px;
+  width: calc(100% - 60px);
 }
 .main__logo {
   text-align: center;
-  margin-top: 80px;
 }
 .main__logo img {
   width: 100%;
   height: auto;
+  max-width: 450px;
 }
 .description__slogan {
   text-shadow: 0 0 8px rgba(172, 130, 62, 0.75);
@@ -116,7 +119,7 @@ $btnTextColor:#d90308; // .header__btn__order
 .btn__group {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 245px;
   button {
     margin-left: 52px;
   }
@@ -402,6 +405,7 @@ $btnTextColor:#d90308; // .header__btn__order
     letter-spacing: -5.23px;
     position: relative;
     left: 22%;
+    width: calc(100% - 22%);
   }
   &__phone span {
     color: #fffefc;
@@ -420,6 +424,7 @@ $btnTextColor:#d90308; // .header__btn__order
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   &__btn {
     border: 3px solid #ffffff;
@@ -445,10 +450,57 @@ $btnTextColor:#d90308; // .header__btn__order
   }
 }
 @media screen and (max-width: 768px){
+  .jqcart-cart-label {
+    position: relative;
+    left: 117px;
+    width: 100px;
+    z-index: 995;
+  }
+  .jqcart-cart-label .jqcart-total-cnt {
+    left: 33px;
+    font-size: 2em;
+  }
+  .jqcart-cart-label .jqcart-title {
+    display: none;
+  }
+  .logo-header {
+    display: none;
+  }
+  // test test
+  .main__section, .scrin2__section{
+    background-position: right;
+    top: -1px;
+  }
+  .scrin3__section {
+    background-color: #0b0100;
+    background-size: 325%;
+    background-position: left
+  }
+  .text__box {
+    margin-top: 40px;
+    line-height: 45.96px;
+  }
+  .section__title .description__slogan {
+    color: #fcf8f8;
+  }
+  .help__bg {
+    height: 100vh;
+  }
+  // test test
+  .header__fone {
+    left: 33px;
+    position: relative;
+    top: 23px;
+  }
+  .header__btn__order {
+    left: 30px;
+    top: 30px;
+  }
   .title-slogan {
     font-size: 3em;
     line-height: 1em;
-    padding-top: 0px;
+    padding-top: 99px;
+    left: 36px;
   }
   .section__title .description__slogan {
     font-size: 3em;
@@ -460,6 +512,8 @@ $btnTextColor:#d90308; // .header__btn__order
   }
   .btn__group {
     flex-wrap: wrap;
+    position: relative;
+    left: -25px;
   }
   .btn__group button {
     margin-left: 0px;
